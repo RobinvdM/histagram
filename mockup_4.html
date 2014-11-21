@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<link href='http://fonts.googleapis.com/css?family=Bad+Script|Open+Sans:300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css"></style>
+
+		<meta charset="utf-8" />
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script src="jquery.min.js"></script>
+		<script language="javascript" type="text/javascript" src="resize/src/jquery.resizeandcrop.js"></script>
+		<link rel="stylesheet" type="text/css" href="resize/src/jquery.resizeandcrop.css"></link>
+		<script src="./script.js"></script>	
+	</head>
+	<body>
+		<div id="container" style="height:100%;">
+				<div id="wrapper">
+					<div id="content">
+						<div id="map-canvas"></div>
+					</div>
+				</div>
+			<div id="navigation" style="padding:25px;">
+				<div style="height:900px; overflow-y:hidden;">
+					<div id="nav"></div>
+					<div id="p1" class="pic" style="float:right; margin-bottom:22px;">1</div>
+					<div id="p2" class="pic" style="float:left;">2</div>
+					<div id="p3" class="pic" style="float:right;">3</div>					
+				</div>
+			</div>
+		</div>	
+
+		<script>
+		// Defer call to plugin when user click on "simulation" link
+		if ( m = window.location.search.match( /delay=(\d+)/ ) ) {
+		  setTimeout( init, 1 * m[1] );
+		} else {
+		  init();
+		}
+
+		function init() {
+		  $("img.pic").resizeAndCrop();
+		}
+
+		// Handle links to reload the page with or without simulated image-load delay
+		function reload( delay ) {
+		  var curUrl = window.location.href;
+		  curUrl = curUrl.replace( /\?.*$/, '' ); // Strip QS
+		  window.location = curUrl + '?delay=' + delay; // Redirect/reload
+		}
+		</script>		
+	</body>
+</html>
+

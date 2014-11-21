@@ -1,0 +1,293 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html,body {
+	font: 16px solid 'Open Sans', Arial;
+	height: 100%;
+	background:#222222;
+	margin: 0px;
+	padding: 0px;
+	color:#555555;
+}
+
+div.head {
+	width: 100%;
+	background: #000;
+	line-height: 2;
+	color: white;
+	position: relative;
+	z-index: 101;
+}
+div.head a {
+	text-decoration: underline;
+	color: white;
+}
+div.head p {
+	margin-bottom: 0;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+div#header{
+	position:relative
+}
+
+div#wrapper{
+	float:right;
+	width:100%;
+	height:100%;
+	margin-left:-875px;
+}
+
+div#content{
+	margin-left:875px;
+	height:100%;
+	background:#4ad391;
+}
+
+div#navigation{
+	float:left;
+	width:875px;
+	background:#222222;
+	height:100%;
+}
+
+div#extra{
+	float:left;
+	width:875px;
+	background:#222222;
+}	
+
+#map-canvas {
+	height:100%;
+	width:100%;
+}			
+
+#nav {
+	width: 400px;
+	float:left;
+	height: 400px;
+	background:transparent url('./logo_trans.png') no-repeat 5px 5px;
+	margin-bottom:25px;
+	text-align: center;
+}
+
+.pic {
+	cursor: pointer;
+	position: relative;
+}
+.pic:hover div.hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	-moz-box-shadow:    inset 10px 10px 0px #fff,inset -10px -10px 0px #fff;
+	-webkit-box-shadow: inset 10px 10px 0px #fff,inset -10px -10px 0px #fff;
+	box-shadow:         inset 10px 10px 0px #fff,inset -10px -10px 0px #fff;
+}
+
+#nav.correct {
+	background-color:#9FCC7C;
+	padding: 60px 40px;
+}
+#nav.wrong {
+	background-color:#C98787;
+	padding: 60px 40px;
+	color:#fff;
+}
+#nav strong {
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 51px;
+	position: relative;
+	width: 65px;
+	height: 65px;
+	border-radius: 65px;
+	left: 570px;
+	top: 50px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+#nav.correct strong {
+	background: #7ABF66;
+}
+#nav.wrong strong {
+	background: #DB3026;
+	font:48px solid 'Open Sans', Arial;
+}
+#nav img {
+	margin: 10px auto 4px;
+	display: block;
+	border: 4px solid #000;
+}
+
+#nav span.introquestion {
+	font-size: 40px;
+	display: block;
+	margin-top: 135px;
+	color:#fff;	
+}
+
+#nav span.score {
+	font-size: 40px;
+	display: block;
+	margin-top: 15px;
+	color:#fff;
+}
+#nav img.logo {
+	border:0;
+}
+#nav .polaroid {
+	background:#fff;
+	width: 470px;
+	height: 500px;
+	margin: 10px auto 5px;
+	color:#888;
+	padding: 30px 0 0;
+	font-family: 'Bad Script', cursive;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	line-height: 1.4;
+}
+#nav button {
+	border: 1px solid #E08D10;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.22);
+
+	background-color: #FF8F01;
+	background-image: -moz-linear-gradient(top,rgba(125,190,89,1) 0,rgba(72,164,21,1) 100%);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#FEAF50),color-stop(100%,#FF8F01));
+	background-image: -webkit-linear-gradient(top,#FEAF50 0,#FF8F01 100%);
+	background-image: -o-linear-gradient(top,rgba(125,190,89,1) 0,rgba(72,164,21,1) 100%);
+	background-image: -ms-linear-gradient(top,rgba(125,190,89,1) 0,rgba(72,164,21,1) 100%);
+	background-image: linear-gradient(to bottom,#FEAF50 0,#FF8F01 100%);
+
+	font-weight: bold;
+	font-style: normal;
+	font-size: 24px;
+	color: #FFF;
+	line-height: 1;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #8C5D1E;
+
+	white-space: nowrap;
+
+	padding: 10px 50px;
+	cursor: pointer;
+
+	display: block;
+
+	margin: 30px auto;
+}
+
+#nav div.final {
+	margin-top: 120px;
+	font-size: 40px;
+	color: #fff;
+	background: transparent url(./final.png) no-repeat center center;
+	padding: 180px 0;
+}
+#nav div.final em {
+	display: block;
+	font-size: 100px;
+	font-weight: bold;
+	font-style: normal;
+	padding-bottom: 50px;
+}
+#nav .share {
+	width: 280px;
+	margin: 10px auto;
+	line-height: 1.6;
+}
+#nav .share .twitter {
+	background: #6cdfea;
+	float: left;
+	width: 140px;
+	display: block;
+	color:white;
+	font: inherit;
+	text-decoration: none;
+	padding: 5px;
+}
+#nav .share .fb {
+	background: #3b5998;
+	float: left;
+	width: 140px;
+	display: block;
+	color: white;
+	font: inherit;
+	text-decoration: none;
+	padding: 5px;
+}
+#nav .share a:hover {
+	color:rgba(0,0,0,.5);
+}
+
+
+div.intro {
+	position: fixed;
+	left: 0;
+	top: 30px;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+	background: -webkit-gradient(radial, 50% 50%, 700, 50% 50%, 400, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4)));
+	background: -o-gradient(radial, 50% 50%, 700, 50% 50%, 400, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4)));
+	background: -moz-gradient(radial, 50% 50%, 700, 50% 50%, 400, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4)));
+	background: -ms-gradient(radial, 50% 50%, 700, 50% 50%, 400, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4)));
+	-webkit-transition-property: display;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: linear;
+}
+div.intro div.content {
+	width: 100%;
+	height: 100%;
+	background:rgba(255,255,255,0.80);
+	background-repeat: no-repeat;
+	padding: 25px;
+}
+
+h1 {
+	margin-bottom: 10px; 
+}
+
+p {
+	margin-bottom: 10px;
+	font-size : 14pt;
+}
+
+div.intro div.content button {
+    border: 1px solid #E08D10;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #C5C5C5;
+
+    background-color: #FF8F01;
+    background-image: -moz-linear-gradient(top,rgba(125,190,89,1) 0,rgba(72,164,21,1) 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#FEAF50),color-stop(100%,#FF8F01));
+    background-image: -webkit-linear-gradient(top,#FEAF50 0,#FF8F01 100%);
+    background-image: -o-linear-gradient(top,rgba(125,190,89,1) 0,rgba(72,164,21,1) 100%);
+    background-image: -ms-linear-gradient(top,rgba(125,190,89,1) 0,rgba(72,164,21,1) 100%);
+    background-image: linear-gradient(to bottom,#FEAF50 0,#FF8F01 100%);
+
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    color: #FFF;
+    line-height: 1;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #8C5D1E;
+
+    white-space: nowrap;
+
+    padding: 10px 50px;
+    cursor: pointer;
+
+    display: block;
+}
